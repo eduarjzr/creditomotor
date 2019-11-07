@@ -2,13 +2,22 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Credito Motor Jesan{% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/mdb.min.css') }}">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+    <div class="container pt-5">
         {% block body %}{% endblock %}
+    </div>
+
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/mdb.min.js') }}"></script>
+        <script src="{{ asset('js/popper.min.js') }}"></script>
+        <script src="{{ asset('js/numeral.min.js') }}"></script>
         {% block javascripts %}{% endblock %}
+    
     </body>
 </html>
